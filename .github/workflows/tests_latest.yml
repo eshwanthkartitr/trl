@@ -16,6 +16,8 @@ permissions: {}
 
 jobs:
   tests:
+    # These GPU runner groups are provided by the upstream repository.
+    if: github.repository == 'huggingface/trl'
     permissions:
       contents: read
     name: Tests latest TRL release with dev dependencies
