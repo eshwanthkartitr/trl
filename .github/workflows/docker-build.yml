@@ -20,6 +20,8 @@ permissions: {}
 
 jobs:
   trl:
+    # The runners and Hugging Face registry credentials are provided by upstream.
+    if: github.repository == 'huggingface/trl'
     permissions:
       contents: read
     name: "Build and push TRL Docker image"
